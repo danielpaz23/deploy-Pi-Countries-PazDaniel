@@ -49,11 +49,10 @@ const Filtro = () => {
     setContinentFilter("");
     setSortOrder("");
     setCurrentPage(1);
-    // dispatch(getCountries());
     redirectToHome();
   };
   const redirectToHome = () => {
-    window.location.href = '/home/'; // Reemplaza '/' con la ruta de tu página de inicio
+    window.location.href = '/home/';
   };
   
   const handleContinentFilter = (continent) => {

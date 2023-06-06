@@ -17,6 +17,8 @@
   border-radius: 8px;
   padding: 10px 30px;
   margin: 60px;
+  cursor: pointer;
+
 }
 
 .links:hover {
