@@ -48,7 +48,7 @@ const Filtro = () => {
     setActivityFilter("");
     setContinentFilter("");
     setSortOrder("");
-    dispatch(getCountries());
+    // dispatch(getCountries());
   };
 
   const handleContinentFilter = (continent) => {
