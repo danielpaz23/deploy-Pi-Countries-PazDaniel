@@ -57,7 +57,9 @@ display: flex;
 }
 .box3{
   overflow: hidden;
-  justify-content: center;
+  object-fit: cover; 
+
+  /* justify-content: center; */
 }
 .box4{
   width: 50%;
