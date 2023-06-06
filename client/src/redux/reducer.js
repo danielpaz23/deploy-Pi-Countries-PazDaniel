@@ -37,17 +37,33 @@ const rootReducer = (state = initialState, action) => {
             const filteredByActivity = action.payload
             return { ...state, filteredCountries: filteredByActivity };
         case SORT_BY_NAME_ASC:
-            const sortedByNameAsc = state.filteredCountries.slice().sort((a, b) => a.name.localeCompare(b.name));
+            const sortedByNameAsc = state.filteredCountries
+                ? state.filteredCountries.slice().sort((a, b) => a.name.localeCompare(b.name))
+                : state.countries.slice().sort((a, b) => a.name.localeCompare(b.name));
             return { ...state, filteredCountries: sortedByNameAsc };
+        // const sortedByNameAsc = state.filteredCountries.slice().sort((a, b) => a.name.localeCompare(b.name));
+        // return { ...state, filteredCountries: sortedByNameAsc };
         case SORT_BY_NAME_DESC:
-            const sortedByNameDesc = state.filteredCountries.slice().sort((a, b) => b.name.localeCompare(a.name));
+            const sortedByNameDesc = state.filteredCountries
+                ? state.filteredCountries.slice().sort((a, b) => b.name.localeCompare(a.name))
+                : state.countries.slice().sort((a, b) => b.name.localeCompare(a.name));
             return { ...state, filteredCountries: sortedByNameDesc };
+        // const sortedByNameDesc = state.filteredCountries.slice().sort((a, b) => b.name.localeCompare(a.name));
+        // return { ...state, filteredCountries: sortedByNameDesc };
         case SORT_BY_POPULATION_ASC:
-            const sortedByPopulationAsc = state.filteredCountries.slice().sort((a, b) => a.population - b.population);
+            const sortedByPopulationAsc = state.filteredCountries
+                ? state.filteredCountries.slice().sort((a, b) => a.population - b.population)
+                : state.countries.slice().sort((a, b) => a.population - b.population);
             return { ...state, filteredCountries: sortedByPopulationAsc };
+        // const sortedByPopulationAsc = state.filteredCountries.slice().sort((a, b) => a.population - b.population);
+        // return { ...state, filteredCountries: sortedByPopulationAsc };
         case SORT_BY_POPULATION_DESC:
-            const sortedByPopulationDesc = state.filteredCountries.slice().sort((a, b) => b.population - a.population);
-            return { ...state, filteredCountries: sortedByPopulationDesc };
+            const sortedByPopulationDesc = state.filteredCountries
+        ? state.filteredCountries.slice().sort((a, b) => b.population - a.population)
+        : state.countries.slice().sort((a, b) => b.population - a.population);
+      return { ...state, filteredCountries: sortedByPopulationDesc };
+            // const sortedByPopulationDesc = state.filteredCountries.slice().sort((a, b) => b.population - a.population);
+            // return { ...state, filteredCountries: sortedByPopulationDesc };
         case SEARCH_COUNTRY_NAME:
             return { ...state, filteredCountries: action.payload };
         default:
