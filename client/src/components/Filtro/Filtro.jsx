@@ -45,6 +45,10 @@ const Filtro = () => {
   const handleClick = (e) => {
     e.preventDefault();
     setName("");
+    setActivityFilter("");
+    setContinentFilter("");
+    setSortOrder("");
+    setCurrentPage(1);
     dispatch(getCountries());
   };
 
