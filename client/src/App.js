@@ -3,7 +3,7 @@ import { Route, useLocation } from "react-router-dom";
 import { Home, Landing, Detail, Form } from "./views"
 import NavBar from "./components/NavBar/NavBar";
 import axios from 'axios';
-axios.defaults.baseURL = "https://pi-countries-production-47ab.up.railway.app/";
+axios.defaults.baseURL = 'http://localhost:3001/';
 function App() {
   const location = useLocation();
   return (

@@ -12,7 +12,7 @@ export const SEARCH_COUNTRY_NAME = "SEARCH_COUNTRY_NAME"
 export const getAct = () => {
     try {
         return async function (dispatch) {
-            const apiData = await axios.get(`activities/`);
+            const apiData = await axios.get(`/activities/`);
             const activities = apiData.data;
             dispatch({ type: GET_ACT, payload: activities })
         }
@@ -23,7 +23,7 @@ export const getAct = () => {
 export const getCountry = (id) => {
     try {
         return async function (dispatch) {
-            const apiData = await axios.get(`countries/${id}`);
+            const apiData = await axios.get(`/countries/${id}`);
             const country = apiData.data;
             dispatch({ type: GET_COUNTRY, payload: country })
         }
@@ -34,8 +34,8 @@ export const getCountry = (id) => {
 export const getCountries = () => {
     try {
         return async function (dispatch) {
-            const response = await axios.get(`countries/`);
-            const activitiesResponse = await axios.get(`activities/`);
+            const response = await axios.get(`/countries/`);
+            const activitiesResponse = await axios.get(`/activities/`);
             const activities = activitiesResponse.data;
             const countries = response.data.map((country) => {
                 const countryActivities = activities.filter((activity) =>
@@ -60,8 +60,8 @@ export const filterByContinent = (continent) => ({
 export const filterByActivity = (activity) => {
     try {
         return async function (dispatch) {
-            const response = await axios.get(`countries/`);
-            const activitiesResponse = await axios.get(`activities/`);
+            const response = await axios.get(`/countries/`);
+            const activitiesResponse = await axios.get(`/activities/`);
             const activities = activitiesResponse.data;
             const countries = response.data.map((country) => {
                 const countryActivities = activities.filter((activity) =>
@@ -102,7 +102,7 @@ export const sortByPopulationDesc = () => ({
 export const searchCountryName = (name) => {
     try {
         return async function (dispatch) {
-            const apiData = await axios.get(`countries?name=${name}`);
+            const apiData = await axios.get(`/countries?name=${name}`);
             const country = apiData.data;
             dispatch({ type: SEARCH_COUNTRY_NAME, payload: country })
         }

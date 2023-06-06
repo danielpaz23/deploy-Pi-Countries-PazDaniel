@@ -20,7 +20,8 @@
 const server = require('./src/app.js');
 const axios = require('axios');
 const { conn, Country} = require('./src/db.js');
-
+require('dotenv').config();
+const {PORT}= process.env
 async function fetchAndSaveCountries() {
   try {
     const response = await axios.get('https://restcountries.com/v3.1/all');
@@ -40,7 +41,7 @@ async function fetchAndSaveCountries() {
     // Sincronizar el modelo Country con la base de datos
     await Country.sync();
     // Guardar los países en la base de datos
-    await Country.bulkCreate(filteredCountries);
+    await Country.bulkCreate(filteredCountries, {updateOnDuplicate:['id']});
     console.log('Los países se han guardado correctamente en la base de datos.');
   } catch (error) {
     console.error('Ocurrió un error al obtener o guardar los países:', error);
@@ -48,10 +49,10 @@ async function fetchAndSaveCountries() {
 }
 // mandar la funcion al controller
 conn.sync({ force: false}).then(() => {
-    // fetchAndSaveCountries();
+    fetchAndSaveCountries();
     
-      server.listen(3001, () => {
-        console.log('%s listening at 3001');
+      server.listen(PORT, () => {
+        console.log('%s listening at ', process.env.PORT);
       });
     })
     .catch(error => {
