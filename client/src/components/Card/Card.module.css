@@ -11,6 +11,21 @@
   border-radius: 0px;
   padding: 2px;
 }
+.links {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 10px 10px;
+  margin: 10px;
+}
+.links:hover {
+  color: hotpink;
+  background-color: rgb(72, 61, 139);
+  border-radius: 17px;
+  padding: 10px 10px;
+}
 .cardimg {
   width: 75%;
   height: 150px;
