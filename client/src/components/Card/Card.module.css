@@ -8,14 +8,14 @@
 .card{
   display: flex;
   border: 2px solid red;
-  width: 500px;
+  width: 350px;
   border-radius: 0px;
   padding: 2px;
 }
 .links{
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   color: rgb(0, 0, 0);
   border-radius: 8px;
   padding: 1px 3px;
