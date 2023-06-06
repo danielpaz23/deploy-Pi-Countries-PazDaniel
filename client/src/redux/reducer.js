@@ -37,7 +37,8 @@ const rootReducer = (state = initialState, action) => {
             const filteredByActivity = action.payload
             return { ...state, filteredCountries: filteredByActivity };
         case SORT_BY_NAME_ASC:
-            const sortedByNameAsc = (state.filteredCountries || state.allCountries).slice().sort((a, b) =>
+            const countriesToSortNameAsc = state.filteredCountries || state.countries;
+            const sortedByNameAsc = countriesToSortNameAsc.slice().sort((a, b) =>
                 a.name.localeCompare(b.name)
             );
             return { ...state, filteredCountries: sortedByNameAsc };
@@ -48,7 +49,8 @@ const rootReducer = (state = initialState, action) => {
         // const sortedByNameAsc = state.filteredCountries.slice().sort((a, b) => a.name.localeCompare(b.name));
         // return { ...state, filteredCountries: sortedByNameAsc };
         case SORT_BY_NAME_DESC:
-            const sortedByNameDesc = (state.filteredCountries || state.allCountries).slice().sort((a, b) =>
+            const countriesToSortNameDesc = state.filteredCountries || state.countries;
+            const sortedByNameDesc = countriesToSortNameDesc.slice().sort((a, b) =>
                 b.name.localeCompare(a.name)
             );
             return { ...state, filteredCountries: sortedByNameDesc };
@@ -59,10 +61,12 @@ const rootReducer = (state = initialState, action) => {
         // const sortedByNameDesc = state.filteredCountries.slice().sort((a, b) => b.name.localeCompare(a.name));
         // return { ...state, filteredCountries: sortedByNameDesc };
         case SORT_BY_POPULATION_ASC:
-            const sortedByPopulationAsc = (state.filteredCountries || state.allCountries).slice().sort((a, b) =>
+            const countriesToSortPopulationAsc = state.filteredCountries || state.countries;
+            const sortedByPopulationAsc = countriesToSortPopulationAsc.slice().sort((a, b) =>
                 a.population - b.population
             );
             return { ...state, filteredCountries: sortedByPopulationAsc };
+
         // const sortedByPopulationAsc = state.filteredCountries
         //     ? state.filteredCountries.slice().sort((a, b) => a.population - b.population)
         //     : state.countries.slice().sort((a, b) => a.population - b.population);
@@ -70,7 +74,8 @@ const rootReducer = (state = initialState, action) => {
         // const sortedByPopulationAsc = state.filteredCountries.slice().sort((a, b) => a.population - b.population);
         // return { ...state, filteredCountries: sortedByPopulationAsc };
         case SORT_BY_POPULATION_DESC:
-            const sortedByPopulationDesc = (state.filteredCountries || state.allCountries).slice().sort((a, b) =>
+            const countriesToSortPopulationDesc = state.filteredCountries || state.countries;
+            const sortedByPopulationDesc = countriesToSortPopulationDesc.slice().sort((a, b) =>
                 b.population - a.population
             );
             return { ...state, filteredCountries: sortedByPopulationDesc };
@@ -78,6 +83,7 @@ const rootReducer = (state = initialState, action) => {
         //     ? state.filteredCountries.slice().sort((a, b) => b.population - a.population)
         //     : state.countries.slice().sort((a, b) => b.population - a.population);
         // return { ...state, filteredCountries: sortedByPopulationDesc };
+        // para abajo es el origina
         // const sortedByPopulationDesc = state.filteredCountries.slice().sort((a, b) => b.population - a.population);
         // return { ...state, filteredCountries: sortedByPopulationDesc };
         case SEARCH_COUNTRY_NAME:
