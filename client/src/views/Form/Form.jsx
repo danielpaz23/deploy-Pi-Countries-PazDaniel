@@ -93,7 +93,7 @@ const Form = () => {
         } else if (activities.some((activity) => activity.name === form.name)) {
             return alert("The name is already in use!");
         }
-        await axios.post("http://localhost:3001/activities/", form);
+        await axios.post("https://deploy-pi-countries-pazdaniel-production.up.railway.app/activities/", form);
         alert("Activity created!!")
         setErrors({
             name: "",
