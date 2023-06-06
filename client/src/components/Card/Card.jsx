@@ -11,11 +11,11 @@ export default function Card(props) {
                 <img className={style.cardimg} src={props.flags} alt="Bandera del país"></img>
                 <p className={style.p}> {props.continents}</p>
             </div>
-            <Link
+            <Link className={style.links}
                     to={`/countries/${props.id}`}
                     style={{textDecoration: "none" }}
                 >
-                    <h2 className={style.links}>{props.name}</h2>
+                    <h2 >{props.name}</h2>
                 </Link>
         </div>
     )
