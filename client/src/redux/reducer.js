@@ -37,7 +37,7 @@ const rootReducer = (state = initialState, action) => {
             const filteredByActivity = action.payload
             return { ...state, filteredCountries: filteredByActivity };
         case SORT_BY_NAME_ASC:
-            const countriesToSortNameAsc = state.filteredCountries || state.allCountries;
+            const countriesToSortNameAsc = state.filteredCountries.length > 0 ? state.filteredCountries : state.allCountries;
             const sortedByNameAsc = countriesToSortNameAsc.slice().sort((a, b) =>
                 a.name.localeCompare(b.name)
             );
