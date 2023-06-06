@@ -52,7 +52,7 @@ const Filtro = () => {
     redirectToHome();
   };
   const redirectToHome = () => {
-    window.location.href = '/home/';
+    window.location.href = '/home';
   };
   
   const handleContinentFilter = (continent) => {
