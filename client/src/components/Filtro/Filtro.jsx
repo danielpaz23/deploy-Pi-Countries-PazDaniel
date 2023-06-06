@@ -49,7 +49,7 @@ const Filtro = () => {
     setContinentFilter("");
     setSortOrder("");
     setCurrentPage(1);
-    dispatch(getCountries());
+    // dispatch(getCountries());
   };
 
   const handleContinentFilter = (continent) => {
