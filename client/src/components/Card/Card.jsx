@@ -13,6 +13,7 @@ export default function Card(props) {
             </div>
             <Link 
                     to={`/countries/${props.id}`}
+                    style={{textDecoration: "none" }}
                 >
                     <h2 className={style.links}>{props.name}</h2>
                 </Link>
