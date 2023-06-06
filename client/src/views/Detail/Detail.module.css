@@ -58,8 +58,6 @@ display: flex;
 .box3{
   overflow: hidden;
   object-fit: cover; 
-
-  /* justify-content: center; */
 }
 .box4{
   width: 50%;
