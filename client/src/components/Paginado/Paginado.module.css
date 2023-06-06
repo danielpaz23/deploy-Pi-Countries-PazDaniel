@@ -1,0 +1,25 @@
+.pagination {
+    width: 3.5%;
+    justify-content: center;
+    align-items: center;
+	display: inline-block;
+    font-size: 1px;
+    padding: 1px 2px;
+}
+.links {
+    width: 95%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 3px 8px;
+    margin: 5px;
+  }
+  .links:hover {
+    color: hotpink;
+    background-color: rgb(72, 61, 139);
+    border-radius: 17px;
+    padding: 3px 8px;
+  }
+  

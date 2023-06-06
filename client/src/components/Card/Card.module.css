@@ -1,0 +1,44 @@
+.divCards{
+  background-color:darkgrey;
+  border-radius: 10px;
+  margin: 5px 5px;
+  border: 2px solid black;
+  padding: 0px 5px 0px 5px;
+}
+.card {
+  display: flex;
+  width: 350px;
+  border-radius: 0px;
+  padding: 2px;
+}
+.links{
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 0px 3px;
+  margin: 10px;
+  cursor: pointer;
+}
+.links:hover{
+  color: hotpink;
+  background-color: rgb(72, 61, 139);
+  border-radius: 40px;
+  padding: 0px 3px;
+}
+.cardimg {
+  width: 75%;
+  height: 150px;
+  object-fit: cover; 
+  border-radius: 0px 20px 20px 0px;
+  border: 2px solid darkgrey;
+  margin-top: 3px;
+}
+.p{
+  text-decoration: none;
+  font-weight:bolder;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+

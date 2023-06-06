@@ -1,0 +1,217 @@
+.divreset {
+  justify-content: flex;
+  padding: 10px 20px 365px 10px;
+  background-image: url("../../img/imgmundi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.error{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color:red;
+}
+text{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  background: linear-gradient(
+    110.78deg,
+    rgb(118, 230, 80) -1.13%,
+    rgb(249, 214, 73) 15.22%,
+    rgb(240, 142, 53) 32.09%,
+    rgb(236, 81, 87) 48.96%,
+    rgb(255, 24, 189) 67.94%,
+    rgb(26, 75, 255) 85.34%,
+    rgb(98, 216, 249) 99.57%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+h2{
+  position: relative;
+  bottom: 0px;
+  margin-top: 0px;
+  font-size: 2rem;
+  box-sizing: border-box;
+  min-width: 0px;
+  line-height: 1.2;
+  margin: 0px;
+  background: linear-gradient(
+    110.78deg,
+    rgb(118, 230, 80) 10.13%,
+    rgb(249, 214, 73) 15.22%,
+    rgb(240, 142, 53) 20.09%,
+    rgb(236, 81, 87) 28.96%,
+    rgb(255, 24, 189) 37.94%,
+    rgb(26, 75, 255) 55.34%,
+    rgb(98, 216, 249) 69.57%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50px;
+}
+label {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+.select {
+  cursor: pointer;
+  border-radius: 0px;
+  display: inline-block;
+  border:2px solid black;
+  font-size: 20px;
+  line-height: 1.5em;
+  padding: 0px 0px 100px 10px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+  appearance:inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.links {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 10px 3px;
+}
+.links:hover {
+  font-size: 20px;
+  color: hotpink;
+  background-color: rgb(72, 61, 139);
+  border-radius: 40px;
+  padding: 10px 3px;
+}
+button {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 0px 3px 30px 3px;
+  margin: 10px;
+}
+button:hover{
+  color: hotpink;
+  background-color: rgb(72, 61, 139);
+  border-radius: 40px;
+  padding: 0px 3px 30px 3px;
+ } 
+.box1 {
+  display: flex;
+  padding: 10px 10px 10px 50px;
+  background-color: white;
+}
+.box2 {
+  width: 30%;
+  height: 50px;
+  display: grid;
+  padding: 0px 0px 40px 2px;
+}
+.box2a{
+  display: flex;
+  padding: 0px 200px 0px 3px;
+  width: 40%;
+  height: 50px;
+}
+.box2b{
+  display: flex;
+  padding: 0px 250px 0px 3px;
+  width: 60%;
+  height: 50px;
+}
+.box2d{
+  padding: 0px 20px 0px 4px;
+  overflow: hidden;
+  width: 10%;
+  height: 50px;
+}
+.box2e {
+  display:flex;
+  padding: 5px 100px 1px 3px;
+  width: 30%;
+  height: 25px;
+}
+.box3 {
+  width: 40%;
+  height: 50px;
+  display: grid;
+  padding: 0px 0px 40px 2px;
+}
+.box3a{
+  display: flex;
+  padding: 0px 400px 0px 3px;
+  width: 20%;
+  height: 50px;
+}
+.box3b{
+  display: flex;
+  padding: 0px 100px 0px 0px;
+  width: 50%;
+  height: 45px;
+}
+.box3c{
+  display:flex;
+  justify-content: flex;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: 30px;
+}
+.box3d{
+  padding: 0px 100px 40px 3px;
+  overflow: hidden;
+}
+.box3e{
+  display:flex;
+  padding: 5px 300px 1px 3px;
+  width: 25%;
+  height: 25px;
+}
+.box4 {
+  display: grid;
+  padding: 5px 1px 60px 3px;
+  width: 20%;
+  height: 25px;
+}
+.box4d {
+  display: flex;
+  padding: 1px 160px 16px 3px;
+  width: 20%;
+  height: 32px;
+  
+}
+.box4e {
+  display: flex;
+  margin-top: 1px;
+  padding: 0px 10px 2px 0px;
+  width: 70%;
+  height: 25px;
+}
+.box5{
+  margin-top: 10px;
+  display: flex;
+  padding: 10px 10px 10px 0px;
+  width: 95%;
+  background-color: white
+}
+.box6{
+  width: 20%;
+  height: 50px;
+  display: grid;
+  padding: 10px 100px 10px 100px;
+}
+.box7{
+  display: grid;
+  width: 70%;
+  padding: 10px 100px 10px 100px;
+}

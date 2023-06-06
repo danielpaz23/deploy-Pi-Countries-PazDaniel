@@ -1,0 +1,132 @@
+.divreset {
+  justify-content: flex;
+  font-size: 10px;
+  padding: 10px 10px 330px 10px;
+  background-image: url("../../img/imgmundi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box1 {
+  display: flex;
+}
+.box2 {
+  width: 12%;
+  display:grid;
+}
+.box3 {
+  width: 40%;
+  display: flex;
+}
+.box4 {
+  display: flex;
+  padding: 0px 0px 0px 25px;
+}
+.box5 {
+  display: flex;
+}
+.box6 {
+  display: flex;
+  width: 30%;
+  padding: 10px 25px;
+}
+.box7 {
+  display: flex;
+  width: 50%;
+  padding: 10px 25px;
+}
+.text {
+  text-align: left;
+  font-family: Arial Black;
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(135, 206, 250);
+  text-shadow: -1px 0 #000, 0 3px #000, 1px 0 #000, 0 -1px #000;
+}
+.linksconst {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 23px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 1px 5px;
+  margin: 15px;
+}
+.linksconst:hover {
+  color: hotpink;
+  background-color: rgb(72, 61, 139);
+  border-radius: 17px;
+  padding: 1px 5px;
+}
+.links {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 10px 10px;
+  margin: 10px;
+}
+.links:hover {
+  color: hotpink;
+  background-color: rgb(72, 61, 139);
+  border-radius: 17px;
+  padding: 10px 10px;
+}
+.listas {
+  display: grid;
+  align-items: center;
+  position: static;
+  min-width: 250px;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 20px 0px 20px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1.1;
+}
+select {
+  border-radius: 25px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 4em 0.5em 1em;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.classic {
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgb(72, 61, 139) 50%),
+    linear-gradient(135deg, rgb(72, 61, 139) 50%, transparent 50%),
+    linear-gradient(to right, rgb(72, 61, 139), hotpink);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+.classic:focus {
+  background-image:
+    linear-gradient(45deg, hotpink 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, hotpink 50%),
+    linear-gradient(to right, hotpink, rgb(72, 61, 139));
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  outline: 0;
+}

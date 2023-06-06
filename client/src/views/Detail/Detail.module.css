@@ -1,0 +1,72 @@
+.divreset {
+  justify-content: flex;
+  padding: 10px 20px 365px 10px;
+  background-image: url("../../img/imgmundi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.imgn{
+  max-width: 500px;
+}
+h3{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 35px;
+  background: linear-gradient(
+    110.78deg,
+    rgb(118, 230, 80) -1.13%,
+    rgb(249, 214, 73) 15.22%,
+    rgb(240, 142, 53) 32.09%,
+    rgb(236, 81, 87) 48.96%,
+    rgb(255, 24, 189) 67.94%,
+    rgb(26, 75, 255) 85.34%,
+    rgb(98, 216, 249) 99.57%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+p{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+.ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type:none;
+}
+.li{
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.boxa{
+display: flex;
+}
+.box1{
+  display: flex;
+  width: 50%;
+  padding: 10px;
+}
+.box2{
+  padding: 40px 50px 0px 0px;
+  overflow: hidden;
+}
+.box3{
+  overflow: hidden;
+}
+.box4{
+  width: 50%;
+}
+.box5{
+  padding:1px 40px 0px 0px;
+}
+.box6{
+  background-color: white;
+  border: 1.5px solid gainsboro;
+  overflow: hidden;
+  padding: 5px;
+}
