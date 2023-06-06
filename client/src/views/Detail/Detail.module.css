@@ -8,8 +8,8 @@
   background-attachment: fixed;
 }
 .imgn{
-  /* max-width: 500px; */
-  width: 75%;
+  max-width: 500px;
+  /* width: 75%; */
   height: 150px;
   object-fit: cover; 
   border-radius: 0px 20px 20px 0px;
