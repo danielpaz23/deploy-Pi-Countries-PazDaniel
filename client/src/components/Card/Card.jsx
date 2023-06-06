@@ -9,7 +9,7 @@ export default function Card(props) {
                 
             <div className={style.card}>
                 <img className={style.cardimg} src={props.flags} alt="Bandera del país"></img>
-                <p > {props.continents}</p>
+                <p className={style.p}> {props.continents}</p>
             </div>
             <Link
                     to={`/countries/${props.id}`}
