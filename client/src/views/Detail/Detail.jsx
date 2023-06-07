@@ -3,15 +3,17 @@ import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import React from "react";
 import style from "./Detail.module.css";
-import { getCountry } from "../../redux/actions.js";
+import { getCountry , clearDetail} from "../../redux/actions.js";
 
 export default function Detail() {
     const { idPais } = useParams();
     const dispatch = useDispatch();
     const country = useSelector((state) => state.country);
+    
 
     useEffect(() => {
         dispatch(getCountry(idPais));
+        return ()=>dispatch(clearDetail())
     }, [dispatch, idPais]);
 
     return (

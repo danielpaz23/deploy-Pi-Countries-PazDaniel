@@ -9,6 +9,10 @@ export const SORT_BY_NAME_DESC = "SORT_BY_NAME_DESC"
 export const SORT_BY_POPULATION_ASC = "SORT_BY_POPULATION_ASC"
 export const SORT_BY_POPULATION_DESC = "SORT_BY_POPULATION_DESC"
 export const SEARCH_COUNTRY_NAME = "SEARCH_COUNTRY_NAME"
+export const CLEARDETAIL = "CLEARDETAIL"
+export const clearDetail = ()=> {
+    dispatch ({type:CLEARDETAIL});
+}
 export const getAct = () => {
     try {
         return async function (dispatch) {

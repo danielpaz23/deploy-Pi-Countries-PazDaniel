@@ -9,6 +9,7 @@ import {
     SORT_BY_POPULATION_ASC,
     SORT_BY_POPULATION_DESC,
     SEARCH_COUNTRY_NAME,
+    CLEARDETAIL,
 } from "./actions";
 
 const initialState = {
@@ -21,6 +22,8 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
+        case CLEARDETAIL:
+            return {...state, country:[]}
         case GET_ACT:
             return { ...state, activities: action.payload };
         case GET_COUNTRY:
