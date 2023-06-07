@@ -40,6 +40,7 @@ const Filtro = () => {
     setActivityFilter("");
     setContinentFilter("");
     setSortOrder("");
+    setCurrentPage(1);
   };
 
   const handleClick = (e) => {
